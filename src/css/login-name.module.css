@@ -1,0 +1,189 @@
+.loginpagemain{
+    background-color:#FCFAFA ;
+}
+
+.loginpage23 {
+    width: 100%;
+    height: 100vh;
+    background-color: #FCFAFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loginpage23 .login_title{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.9em;
+    color:#4F4F4F;
+}
+.loginpage23 .login_content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.loginpage23 .login_form{
+    padding: 3rem 8%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginpage23 .form_group{
+    padding: .3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+.loginpage23 .form_group label,
+.loginpage23 .form_group input,
+.loginpage23 .button{
+    width: 12rem;
+   
+}
+.loginpage23 .form_group label{
+    font-size: 1em;
+    color:#667085;
+    padding: .3rem .2rem;
+}
+.loginpage23 .form_group input{
+    height: 2rem;
+    padding: .3rem .4rem;
+    width: 100%;
+    border: 1px solid #A7A7A7;
+    border-radius: 3px;
+}
+.loginpage23 .form_group input:focus{
+    outline: 1px solid #2D88D4;
+    border: none;
+}
+.loginpage23 .form_group .input_wrapper{
+    width: 100%;
+    position: relative;
+}
+.loginpage23 .form_group .input_wrapper i{
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    cursor: pointer;
+    color: #A7A7A7;
+}
+.loginpage23 .form_group .validation_message{
+    font-size: .8em;
+    width: 12rem;
+    margin-bottom: 1rem;
+    color:#667085;
+}
+.loginpage23 .form_group .validation_message ul{
+    list-style: none outside none;
+}
+.loginpage23 .button{
+    height: 2rem;
+    background-color: #2D88D4;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    margin-top: 3vh;
+}
+
+.loginpage23 .login_progress{
+    position: relative;
+    width: 30%;
+    margin-top: 7rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.loginpage23 .login_progress .progress_item{
+    width: 10rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loginpage23 .login_progress .progress_item .progress_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#2D88D4;
+    color:#fff;
+    padding: .2rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    margin-bottom: .8rem;
+    z-index: 1;
+}
+.loginpage23 .login_progress .progress_item .disabled{
+    background-color:#DCDCDC;
+    color:#fff;
+}
+.loginpage23 .login_progress .progress_item .progress_text{
+    font-size: 1rem;
+    color:#4F4F4F;
+}
+.loginpage23 .login_progress .progress_item .progress_text ul{
+    list-style: none;
+}
+.loginpage23 .login_progress .progress_wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 2.9rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 0;
+}
+.loginpage23 .login_progress .progress_bar{
+    width: 75%;
+    height: 3px;
+    background-color: #E4E7EC;
+}
+
+
+.already_have_a{
+    text-decoration: none;
+    color: #2D88D4;
+}
+
+/* ################################################## media query for phone  */
+
+@media (max-width: 350px){
+    .loginpage23 .login_form{
+        padding: 0rem 8%;
+    } 
+    .loginpage23 h3{
+        font-size: 1.5rem;
+    }
+    .loginpage23 h4,
+    .loginpage23 li
+    {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 760px){
+    .loginpage23 .login_progress{
+        margin-top: 0rem;
+    }
+}
+
+
+@media (max-width: 1024px){
+    .loginpage23 .login_progress{
+        width: 60%;
+    }
+  
+    
+}

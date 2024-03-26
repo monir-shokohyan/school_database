@@ -1,0 +1,58 @@
+/* .Empty{
+    height: 45vh;
+} */
+
+.Trusted_BOX{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin-top: 20rem;
+
+}
+.Trusted_BOX h2{
+    font-size: 1.5rem;
+}
+
+.Trusted_BOX .Icons{
+    padding-top: 2rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    /* border: 2px solid red; */
+}
+
+
+@media (max-width: 350px){
+  .Trusted_BOX{
+    margin-top: 14rem;
+  }
+  .Trusted_BOX .div_icons{
+    padding: 0 0.5rem;
+  }
+
+}
+
+@media (min-width: 351px) and (max-width: 760px){
+    .Trusted_BOX{
+        margin-top: 10rem;
+      }
+
+      .Trusted_BOX .div_icons{
+        padding: 0rem;
+      }
+}
+
+@media (min-width: 761px) and (max-width: 1024px){
+    .Trusted_BOX{
+        margin-top: 19rem;
+      }
+
+      .Trusted_BOX h2{
+        font-size: 3rem;
+    }
+}

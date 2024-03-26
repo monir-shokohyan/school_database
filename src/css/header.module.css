@@ -1,0 +1,248 @@
+
+.header{
+    height: 90vh;
+    width: 100%;
+    background-color: #537895;
+    /* background-image: linear-gradient(315deg, #100F57 74% ,#0C7ED0 100% ); */
+    background-color: #2234ae;
+    background-image: linear-gradient(315deg, #2234ae 0%, #100F57 74%);
+
+}
+.navbar_1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem; 
+}
+
+.nav_mini_screen{
+    display: none;
+}
+
+.nav_ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    color: white;
+    font-size: 1rem;
+
+}
+.navbar_1 ul li:hover{
+    color: #8a89be;
+    cursor: pointer;
+}
+/* ############# button ####### */
+.login{
+    padding: 5px 30px;
+    border-radius: 20px;
+    color: white;
+    background-color: #0A92DD;
+    border: none;
+}
+
+.header_text_button{
+    padding: 5px 30px;
+    border-radius: 20px;
+    color: #D89925;
+    background-color: transparent;
+    border: 1px solid #D89925;
+}
+
+
+
+.Header_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    height: 70%;
+    width: 100%;
+    position: relative;
+
+}
+.Header_text{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60%;
+    width: 35%;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    gap: 1rem;
+}
+.Header_text h1{
+    font-size: 3rem;
+}
+.Header_text p{
+    font-size: 1rem;
+}
+
+.Header_bottom_box{
+    position: absolute;
+    height: 65vh;
+    background: url(/dashboard-screenshot.png);
+    background-size: cover;
+    border: 2px solid white;
+    width: 60vw;
+    /* border: 2px solid green; */
+    left: 19.5%;
+    top: 85%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px;
+
+}
+/* .Header_bottom_box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+} */
+
+@media (max-width: 350px){
+    .header{
+        height: 90vh;
+    }
+    .logo_1, .nav_button_1{
+        display: none;
+    }
+
+    .navbar_1{
+        flex-direction: column;
+        padding: 1rem 0 0 0;
+        /* border: 2px solid green; */
+    }
+    .nav_mini_screen{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .nav_ul{
+        gap: 1rem;
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+    .Header_box{
+        /* border: 2px solid red; */
+        height: 85vh;
+    }
+    .Header_text{
+        /* border: 2px solid red; */
+        height: 70vh;
+        width: 100%;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .Header_bottom_box{
+        height: 35vh;
+        width: 80vw;
+        /* border: 2px solid green; */
+        left: 10%;
+        top: 75%;
+    }
+    .Header_text h1{
+        font-size: 1.5rem;
+    }
+    .Header_text p{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 351px) and (max-width: 760px){
+    .header{
+        height: 70vh;
+    }
+    .logo_1, .nav_button_1{
+        display: none;
+    }
+
+    .navbar_1{
+        flex-direction: column;
+        padding: 0.5rem 0 0 0;
+        /* border: 2px solid green; */
+    }
+    .nav_mini_screen{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .nav_ul{
+        gap: 1.5rem;
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+    .Header_box{
+        /* border: 2px solid red; */
+        height: 20rem;
+    }
+    .Header_text{
+        /* border: 2px solid red; */
+        height: 100%;
+        width: 100%;
+        padding: 0.5rem;
+        gap: 1rem;
+    }
+
+    .Header_bottom_box{
+        height: 35vh;
+        width: 80vw;
+        /* border: 2px solid green; */
+        left: 10%;
+        top: 95%;
+    }
+    .Header_text h1{
+        font-size: 2rem;
+    }
+    .Header_text p{
+        font-size: 1rem;
+    }
+    
+}
+
+
+
+
+@media (min-width: 761px) and (max-width: 1024px){
+
+    .header{
+        height: 70vh;
+        width: 100%;
+    
+    }
+    .nav_mini_screen{
+        display: none;
+    }
+    
+    .nav_ul{
+        font-size: 1.5rem;
+    
+    }
+    .Header_box{
+        height: 50%;
+        width: 100%;
+    
+    }
+    .Header_text{
+        height: 90%;
+        width: 77%;
+        padding: 1rem;
+    }
+    .Header_bottom_box{
+        height: 55vh;
+        width: 80%;
+        left: 10%;
+        top: 100%;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    }
+
+} 
+
